@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Letter for You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500&family=Great+Vibes&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <main class="scene">
+    <section class="envelope" id="envelope" aria-label="Click to read the letter">
+      <div class="envelope__flap"></div>
+      <div class="envelope__body">
+        <p class="envelope__hint">Mở để được "mở"</p>
+        <span class="envelope__seal"> 💌</span>
+      </div>
+    </section>
+
+    <article class="letter" id="letter" aria-live="polite">
+      <div class="letter__paper">
+        <p class="letter__intro">Gửi anh Marcus,</p>
+        <p>
+          Nhân dịp 20/11 ngày nhà Giáo Việt Nam, em muốn gửi anh đôi lời (của Hoàng Dũng). Do là em cũng chưa được tiếp
+          xúc với anh nhiều nên thời gian đầu em có bị sợ anh ạ hic em xin lỗi anhh. Một phần em ngại làm quen với anh
+          và mọi người là do em nghĩ là em hong có đủ khả năng (có thể nói là hong có TRÌNH - HIEUTHUHAI) để pass
+          probation nên em hong có dám làm quen với mọi người. Sau khi tiếp xúc với anh em thấy anh rất dễ gần, mỗi khi
+          em hỏi anh câu nào là anh trả lời cho em rất nhiệt tình và em cũng hiểu hơn rất nhiều sau những câu trả lời
+          của anh (dù em hỏi anh bị ít huhu do em bị ngại vì em có nghe nói là anh Alex in charge em). Em cảm ơn anh vì
+          đã luôn giúp đỡ em mỗi khi em cần và nâng đỡ em, chưa bao giờ khó chịu với em ạ.
+        </p>
+        <br>
+        <p>
+          Nhân dịp ngày Nhà Giáo Việt Nam thì đối với em một chữ cũng là thầy, nửa chữ cũng là nửa thầy mà anh thì quá
+          trời chữ cho em, chưa kể còn là chữ tiếng Anh nên đối với em anh còn hơn cả người thầy mà phải là very very
+          teacher. Em muốn chúc anh Marcus một ngày Nhà Giáo Việt Nam thật vui vẻ, có nhiều sức khoẻ để có thể làm việc
+          được năng suất hơn, có thể cover cho các SE lỏ đặc biệt là em trong tương lai và mong anh có thể in charge và
+          hỗ trợ cho thật nhiều bạn SE ở các batch sau này và làm người lái đò giúp các bạn trở thành một SE giỏi ạ.
+        </p>
+
+        <figure class="letter__photo">
+          <img src="./Marcus.jpeg" alt="A serene sunset over calm water" loading="lazy" />
+        </figure>
+
+        <p class="letter__closing">Tái bút,</p>
+        <p class="letter__signature" aria-label="Signature">Leon</p>
+      </div>
+    </article>
+  </main>
+
+  <button class="reset" id="reset" type="button" aria-label="Replay animation">
+    Replay
+  </button>
+
+  <script src="./script.js" type="module"></script>
+</body>
+
+</html>
