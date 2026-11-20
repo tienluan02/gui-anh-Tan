@@ -13,6 +13,11 @@
 </head>
 
 <body>
+  <audio id="background-audio" loop>
+    <source src="./tam-tinh-be-nho.mp3" type="audio/mpeg" />
+    Trình duyệt của bạn không hỗ trợ phát audio.
+  </audio>
+
   <main class="scene">
     <section class="envelope" id="envelope" aria-label="Click to read the letter">
       <div class="envelope__flap"></div>
@@ -24,31 +29,31 @@
 
     <article class="letter" id="letter" aria-live="polite">
       <div class="letter__paper">
-        <p class="letter__intro">Gửi anh Marcus,</p>
+        <p class="letter__intro">Gửi anh Tấn,</p>
         <p>
-          Nhân dịp 20/11 ngày nhà Giáo Việt Nam, em muốn gửi anh đôi lời (của Hoàng Dũng). Do là em cũng chưa được tiếp
-          xúc với anh nhiều nên thời gian đầu em có bị sợ anh ạ hic em xin lỗi anhh. Một phần em ngại làm quen với anh
-          và mọi người là do em nghĩ là em hong có đủ khả năng (có thể nói là hong có TRÌNH - HIEUTHUHAI) để pass
-          probation nên em hong có dám làm quen với mọi người. Sau khi tiếp xúc với anh em thấy anh rất dễ gần, mỗi khi
-          em hỏi anh câu nào là anh trả lời cho em rất nhiệt tình và em cũng hiểu hơn rất nhiều sau những câu trả lời
-          của anh (dù em hỏi anh bị ít huhu do em bị ngại vì em có nghe nói là anh Alex in charge em). Em cảm ơn anh vì
-          đã luôn giúp đỡ em mỗi khi em cần và nâng đỡ em, chưa bao giờ khó chịu với em ạ.
+          Nhân dịp 20/11 ngày nhà Giáo Việt Nam, em muốn gửi anh đôi lời. Em chỉ vừa mới tham gia vào Ca Đoàn Giới Trẻ
+          được hơn một năm thôi nhưng mà em đã được học hỏi từ anh rất nhiều thứ. Từ cách hát với cách truyền đạt cảm
+          xúc trong bài hát, cách anh dẫn dắt các bạn trong Ca Đoàn, cách anh quan tâm đến từng thành viên trong Ca Đoàn
+          và đặc biệt là cách anh truyền cảm hứng cho các bạn trẻ. Em rất biết ơn anh vì những điều đó. Em còn học được
+          từ anh các kỹ năng xử lý một bài hát khi đàn như thế nào và gần đây nhất là được anh dẫn dắt trong lớp học chỉ
+          huy Ca Đoàn. Em cảm thấy rất may mắn khi được học hỏi từ anh và em hy vọng sẽ tiếp tục được học hỏi từ anh
+          trong tương lai.
         </p>
         <br>
         <p>
           Nhân dịp ngày Nhà Giáo Việt Nam thì đối với em một chữ cũng là thầy, nửa chữ cũng là nửa thầy mà anh thì quá
-          trời chữ cho em, chưa kể còn là chữ tiếng Anh nên đối với em anh còn hơn cả người thầy mà phải là very very
-          teacher. Em muốn chúc anh Marcus một ngày Nhà Giáo Việt Nam thật vui vẻ, có nhiều sức khoẻ để có thể làm việc
-          được năng suất hơn, có thể cover cho các SE lỏ đặc biệt là em trong tương lai và mong anh có thể in charge và
-          hỗ trợ cho thật nhiều bạn SE ở các batch sau này và làm người lái đò giúp các bạn trở thành một SE giỏi ạ.
+          trời chữ cho em, nên anh "rất rất thầy" đối với em. Em chúc anh luôn mạnh khỏe, hạnh phúc và thành công trong
+          cuộc sống. Chúc anh luôn là một người thầy tuyệt vời và truyền cảm hứng cho các bạn trẻ. Em cũng chúc anh luôn
+          giữ được niềm đam mê và nhiệt huyết trong công việc dẫn dắt Ca Đoàn và tiếp tục truyền cảm hứng cho nhiều bạn
+          trẻ hơn.
         </p>
 
         <figure class="letter__photo">
-          <img src="./Marcus.jpeg" alt="A serene sunset over calm water" loading="lazy" />
+          <img src="./JosNguyenTan.jpg" alt="A serene sunset over calm water" loading="lazy" />
         </figure>
 
         <p class="letter__closing">Tái bút,</p>
-        <p class="letter__signature" aria-label="Signature">Leon</p>
+        <p class="letter__signature" aria-label="Signature">Tiến Luân</p>
       </div>
     </article>
   </main>
@@ -58,6 +63,13 @@
   </button>
 
   <script src="./script.js" type="module"></script>
+  <script>
+    const backgroundAudio = document.getElementById("background-audio");
+    document.getElementById("envelope")?.addEventListener("click", () => {
+      backgroundAudio?.play().catch(() => {});
+    });
+
+  </script>
 </body>
 
 </html>
